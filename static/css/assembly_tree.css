@@ -1,0 +1,458 @@
+/* Assembly Tree Visualization Styles */
+
+/* BOM List Container */
+.bom-list-scrollable {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.bom-list-scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.bom-list-scrollable::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.bom-list-scrollable::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.bom-list-scrollable::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.bom-item {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e3e6f0;
+    transition: all 0.3s ease;
+}
+
+.bom-item:hover {
+    background-color: #f8f9fc;
+    border-left: 3px solid #4e73df;
+    padding-left: 12px;
+}
+
+.bom-item.active {
+    background-color: #e7f1ff;
+    border-left: 3px solid #4e73df;
+    padding-left: 12px;
+}
+
+.bom-item-info {
+    margin-bottom: 10px;
+}
+
+.bom-item-versions {
+    margin-top: 10px;
+}
+
+.version-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.btn-purple {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #5a32a3;
+    border-color: #5a32a3;
+    color: white;
+}
+
+.btn-purple:focus {
+    background-color: #5a32a3;
+    border-color: #5a32a3;
+    color: white;
+    box-shadow: 0 0 0 0.2rem rgba(111, 66, 193, 0.25);
+}
+
+.bom-item-name {
+    font-weight: 600;
+    color: #3a3b45;
+    margin-bottom: 4px;
+}
+
+.bom-item-meta {
+    font-size: 0.75rem;
+    color: #858796;
+}
+
+.bom-item-revisions {
+    margin-top: 8px;
+}
+
+.bom-item-revisions .btn {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+}
+
+.revision-item {
+    transition: all 0.2s ease;
+}
+
+.revision-item:hover {
+    background-color: #f8f9fc !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tree Container */
+.tree-container {
+    width: 100%;
+    height: calc(100vh - 250px);
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fc;
+    border-radius: 4px;
+}
+
+/* Tree SVG Styles */
+.tree-svg {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+.tree-svg.dragging {
+    cursor: grabbing;
+}
+
+/* Tree Node Styles */
+.tree-node {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tree-node rect {
+    fill: #ffffff;
+    stroke: #d1d3e2;
+    stroke-width: 2px;
+    rx: 8;
+    ry: 8;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease;
+}
+
+.tree-node:hover rect {
+    stroke: #4e73df;
+    stroke-width: 3px;
+    filter: drop-shadow(0 4px 8px rgba(78, 115, 223, 0.3));
+}
+
+.tree-node.assembly rect {
+    fill: #e7f1ff;
+    stroke: #4e73df;
+}
+
+.tree-node.mechanical-part rect {
+    fill: #f0f0f0;
+    stroke: #858796;
+}
+
+.tree-node.electrical-part rect {
+    fill: #e8f5e9;
+    stroke: #4caf50;
+}
+
+.tree-node.collapsed rect {
+    stroke-dasharray: 5, 5;
+}
+
+.tree-node text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 12px;
+    fill: #3a3b45;
+    pointer-events: none;
+    user-select: none;
+}
+
+.tree-node .node-part-number {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.tree-node .node-revision {
+    font-size: 10px;
+    fill: #858796;
+    font-weight: 500;
+}
+
+.tree-node .node-description {
+    font-size: 11px;
+    fill: #858796;
+}
+
+.tree-node .node-qty-badge {
+    font-size: 10px;
+    font-weight: 600;
+    fill: #ffffff;
+}
+
+/* Quantity Badge */
+.qty-badge-bg {
+    fill: #4e73df !important;
+    rx: 9;
+    ry: 9;
+    stroke: #ffffff !important;
+    stroke-width: 2 !important;
+}
+
+.node-qty-badge {
+    font-size: 11px !important;
+    font-weight: bold !important;
+    fill: #ffffff !important;
+    text-anchor: middle;
+}
+
+/* Thumbnail Icon */
+.thumbnail-icon {
+    font-size: 14px;
+    fill: #4e73df;
+    cursor: pointer;
+}
+
+.thumbnail-icon:hover {
+    fill: #2e59d9;
+}
+
+.thumbnail-icon.no-thumbnail {
+    fill: #d1d3e2;
+}
+
+/* Expand/Collapse Icon */
+.expand-icon {
+    font-size: 14px;
+    fill: #4e73df;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.expand-icon.collapsed {
+    transform: rotate(-90deg);
+}
+
+/* Tree Links (Connection Lines) */
+.tree-link {
+    fill: none;
+    stroke: #d1d3e2;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+.tree-link.highlight {
+    stroke: #4e73df;
+    stroke-width: 3px;
+}
+
+/* Thumbnail Tooltip */
+.thumbnail-tooltip {
+    position: absolute;
+    display: none;
+    background: #ffffff;
+    border: 2px solid #4e73df;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.thumbnail-tooltip.show {
+    display: block;
+}
+
+.thumbnail-tooltip-header {
+    background: #4e73df;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumbnail-tooltip-body {
+    padding: 15px;
+}
+
+.thumbnail-tooltip-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background: #f8f9fc;
+}
+
+.tooltip-info {
+    font-size: 0.875rem;
+}
+
+.tooltip-info p {
+    margin-bottom: 5px;
+    color: #3a3b45;
+}
+
+.tooltip-info strong {
+    color: #5a5c69;
+    min-width: 80px;
+    display: inline-block;
+}
+
+/* Loading State */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 249, 252, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.loading-spinner {
+    text-align: center;
+}
+
+.loading-spinner i {
+    color: #4e73df;
+    font-size: 3rem;
+}
+
+/* Toolbar Buttons */
+.btn-group .btn {
+    border-radius: 0;
+}
+
+.btn-group .btn:first-child {
+    border-top-left-radius: 0.35rem;
+    border-bottom-left-radius: 0.35rem;
+}
+
+.btn-group .btn:last-child {
+    border-top-right-radius: 0.35rem;
+    border-bottom-right-radius: 0.35rem;
+}
+
+/* Empty State */
+.empty-state {
+    padding: 60px 20px;
+    text-align: center;
+    color: #858796;
+}
+
+.empty-state i {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .tree-container {
+        height: 500px;
+    }
+    
+    .bom-list-scrollable {
+        max-height: 300px;
+    }
+    
+    .thumbnail-tooltip {
+        min-width: 250px;
+        max-width: 300px;
+    }
+    
+    .col-md-3, .col-md-9 {
+        margin-bottom: 15px;
+    }
+}
+
+/* Animation Classes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 0.5s ease-in-out;
+}
+
+/* Node Type Color Coding */
+.node-type-assembly {
+    fill: #4e73df;
+}
+
+.node-type-mechanical {
+    fill: #858796;
+}
+
+.node-type-electrical {
+    fill: #4caf50;
+}
+
+.node-type-3dprint {
+    fill: #f6c23e;
+}
+
+.node-type-fastener {
+    fill: #36b9cc;
+}
+
+.node-type-bearing {
+    fill: #5a5c69;
+}
+
+/* Highlight Path */
+.tree-link.path-highlight {
+    stroke: #f6c23e;
+    stroke-width: 4px;
+    animation: pathPulse 1.5s infinite;
+}
+
+@keyframes pathPulse {
+    0%, 100% {
+        stroke-opacity: 1;
+    }
+    50% {
+        stroke-opacity: 0.5;
+    }
+}
+

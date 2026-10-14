@@ -1,0 +1,8 @@
+/* Assembly Tree Styles - Migrated from static/css/assembly_tree.css */
+/* Additional styles will be added as needed for tree visualization */
+
+.assembly-tree {
+  width: 100%;
+  min-height: 400px;
+}
+

@@ -1,0 +1,61 @@
+# Flask Web Application Dependencies
+Flask==2.3.3
+Flask-SQLAlchemy==3.0.5
+Flask-Login==0.6.3
+Werkzeug==2.3.7
+
+# Database
+SQLAlchemy==1.4.53
+
+# Google Sheets Integration (reused from original app)
+gspread==5.12.0
+google-auth==2.23.3
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+google-api-python-client==2.97.0
+
+# PDM COM access
+pywin32>=306
+
+# Process Management
+psutil>=5.9.0
+
+# Data Processing (reused from original app)
+pandas>=1.5.3
+numpy>=1.24.0
+openpyxl>=3.1.0
+
+# PDF Handling (reused from original app)
+PyPDF2>=3.0.0
+
+# PDF to Image Conversion for Gemini AI
+pdf2image>=1.17.0
+
+# Image Processing for Gemini AI
+Pillow>=10.0.0
+
+# Google Gemini AI Integration
+google-generativeai>=0.3.0
+
+# HTTP client (imported directly by app.py / robot_assembly.py)
+requests>=2.31.0
+
+# PDM native extractor (pdm_native_extractor.py, Windows only)
+comtypes>=1.2.0; sys_platform == "win32"
+
+# Development and Production
+python-dotenv==1.0.0
+gunicorn==21.2.0
+
+# Security
+Flask-WTF==1.1.1
+WTForms==3.0.1
+
+# CORS (for API access)
+Flask-CORS==4.0.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Task Scheduling
+APScheduler==3.10.4

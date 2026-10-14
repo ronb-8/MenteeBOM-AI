@@ -1,0 +1,3697 @@
+{
+  "part_name": "005-AS-01306",
+  "layout": "MenteeBOM",
+  "config": "Default",
+  "components": [
+    {
+      "level": 1,
+      "part_number": "005-AS-01330",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01330.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "05-MP-03672",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-03672.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "05-MP-02028",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02028.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M3 x 16",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "05-MP-01806",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01806.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "005-AS-01328",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01328.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "6M_Hand_V_3_1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\6M_Hand_V_3_1.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_DBV0005A_L_CMP-00004-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_DBV0005A_L_CMP-00004-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-TAJA-MFG_CMP-04424-000650-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-TAJA-MFG_CMP-04424-000650-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25NL05T10_CMP-1011-00778-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25NL05T10_CMP-1011-00778-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_EVRL-0603-2_V_CMP-2100-03578-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_EVRL-0603-2_V_CMP-2100-03578-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T05_CMP-2000-07588-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T05_CMP-2000-07588-1.SLDPRT",
+      "qty": 5,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X04N_CMP-009-00224-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X04N_CMP-009-00224-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_6M_Hand_v3_1_BOARD",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_6M_Hand_v3_1_BOARD.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-505004-0812-MFG_CMP-002-00078-6",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-505004-0812-MFG_CMP-002-00078-6.SLDPRT",
+      "qty": 16,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T05_CMP-2002-08354-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T05_CMP-2002-08354-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X55X25ML10T15_CMP-2100-03667-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X55X25ML10T15_CMP-2100-03667-1.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC0402(1005)60_L_CMP-001-00069-3",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC0402(1005)60_L_CMP-001-00069-3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-CGA6P-IPC_A_CMP-08246-002357-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-CGA6P-IPC_A_CMP-08246-002357-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T10_CMP-2002-07703-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T10_CMP-2002-07703-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1609X50X30NL10T20_CMP-009-00185-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1609X50X30NL10T20_CMP-009-00185-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC1005X06N_CMP-001-00096-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC1005X06N_CMP-001-00096-2.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-IHLP-4040DZ-FP_3_124x3-MFG_CMP-02424-000224-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-IHLP-4040DZ-FP_3_124x3-MFG_CMP-02424-000224-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25ML05T05_CMP-1011-00653-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25ML05T05_CMP-1011-00653-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC3216X19N_CMP-001-00128-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC3216X19N_CMP-001-00128-1.SLDPRT",
+      "qty": 10,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-SMAJ-MFG_CMP-07401-000001-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-SMAJ-MFG_CMP-07401-000001-1.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25NL05T05_CMP-2002-08191-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25NL05T05_CMP-2002-08191-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_DDA0008E_L_CMP-2000-07279-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_DDA0008E_L_CMP-2000-07279-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_MOLX-530470310_V_CMP-2000-05465-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_MOLX-530470310_V_CMP-2000-05465-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25NL10T10_CMP-2002-06311-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25NL10T10_CMP-2002-06311-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_EVRL-0603-2_V_CMP-2100-03580-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_EVRL-0603-2_V_CMP-2100-03580-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T05_CMP-2002-00141-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T05_CMP-2002-00141-1.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X04N_CMP-MNT-R0603-0R-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X04N_CMP-MNT-R0603-0R-1.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_AVAG-HSMX-C190_V_CMP-007-00038-3",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_AVAG-HSMX-C190_V_CMP-007-00038-3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-AMS1117-IPC_C_CMP-209535-000001-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-AMS1117-IPC_C_CMP-209535-000001-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T10_CMP-2002-06604-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T10_CMP-2002-06604-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X55X30LL20T10_CMP-009-00186-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X55X30LL20T10_CMP-009-00186-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC1005X06N_CMP-001-00092-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC1005X06N_CMP-001-00092-2.SLDPRT",
+      "qty": 12,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-CGA6P-IPC_C_CMP-08246-000956-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-CGA6P-IPC_C_CMP-08246-000956-1.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL10T10_CMP-2002-04194-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL10T10_CMP-2002-04194-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_SON50P410X80_HS-13N_CMP-019-00050-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_SON50P410X80_HS-13N_CMP-019-00050-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC1005X06N_CMP-001-00143-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC1005X06N_CMP-001-00143-1.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-LQFP100-1L-MFG_CMP-020-00023-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-LQFP100-1L-MFG_CMP-020-00023-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25ML05T10_CMP-1011-00729-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25ML05T10_CMP-1011-00729-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC3216X19N_CMP-001-00129-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC3216X19N_CMP-001-00129-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-STPS5L60S-MFG_CMP-12187-000009-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-STPS5L60S-MFG_CMP-12187-000009-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25NL05T05_CMP-2002-08297-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25NL05T05_CMP-2002-08297-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_DIOD-SOT23-3_V_CMP-004-00015-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_DIOD-SOT23-3_V_CMP-004-00015-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X35X20LL05T10_CMP-2002-03238-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X35X20LL05T10_CMP-2002-03238-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X04N_CMP-009-00223-3",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X04N_CMP-009-00223-3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-0402-L_1_0_0_05-W_0_5-IPC_A_CMP-14477-000104-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-0402-L_1_0_0_05-W_0_5-IPC_A_CMP-14477-000104-2.SLDPRT",
+      "qty": 18,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T05_CMP-2002-00678-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T05_CMP-2002-00678-1.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X04N_CMP-MNT-R0603-1kR-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X04N_CMP-MNT-R0603-1kR-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_AVAG-HSMX-C190_V_CMP-1744-00004-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_AVAG-HSMX-C190_V_CMP-1744-00004-1.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-B3U-1000P-MFG_CMP-2100-03586-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-B3U-1000P-MFG_CMP-2100-03586-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL05T10_CMP-2002-07520-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL05T10_CMP-2002-07520-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1608X55X30NL20T10_CMP-2000-01243-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1608X55X30NL20T10_CMP-2000-01243-1.SLDPRT",
+      "qty": 6,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC1005X06N_CMP-001-00095-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC1005X06N_CMP-001-00095-2.SLDPRT",
+      "qty": 9,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-CSR1206-IPC_A_CMP-26527-002310-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-CSR1206-IPC_A_CMP-26527-002310-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25LL10T10_CMP-2002-06155-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25LL10T10_CMP-2002-06155-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_CAPC1608X09N_CMP-001-00102-2",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_CAPC1608X09N_CMP-001-00102-2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_FP-MSS1210-333MEB-MFG_CMP-11268-000051-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_FP-MSS1210-333MEB-MFG_CMP-11268-000051-1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "V3_1_RESC1005X40X25NL05T05_CMP-2002-01143-1",
+      "path": "C:\\PDM\\Standard Library\\Electric Boards\\V3_1_RESC1005X40X25NL05T05_CMP-2002-01143-1.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "92010A812",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X12.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "430200400",
+      "path": "C:\\PDM\\Standard Library\\Connectors\\430200400.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "005-MP-03769",
+      "path": "C:\\PDM\\Projects\\005-Hands\\005-MP-03769.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "005-AS-01326",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01326.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "005-AS-01259",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01259.SLDASM",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "05-MP-01033",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01033.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "005-AS-01309",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01309.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Maxon DCX 12_5_3",
+      "path": "C:\\PDM\\Standard Library\\Motors\\Maxon DCX 12_5_3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "005-AS-01271",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01271.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01450",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01450.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01264",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01264.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01410",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01410.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01275",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01275.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01730",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01730.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-00985",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00985.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01260",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01260.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "DIN 6885A 2x2x8",
+      "path": "C:\\PDM\\Standard Library\\Keys\\Parallel Keys DIN 6885 A\\DIN 6885A 2x2x8.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01020",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01020.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01263",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01263.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01025",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01025.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-00987",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00987.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "MTA04-11-HP5DB",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\MTA04-11-HP5DB.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01060",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01060.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "DIN 7991 M2x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 7991 Socket Flat Hd Screws\\DIN 7991 M2x6mm.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "W 638 2.5-2Z",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\W 638 2.5-2Z.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-AS-00358",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00358.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-00994",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00994.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-00995",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00995.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01731",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01731.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "DIN 912 M1.6x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 912 Socket Hd Cap Screws\\DIN 912 M1.6x6mm.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01001",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01001.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01732",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01732.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 6,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "92010A812",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X12.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01728",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01728.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01843",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01843.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01269",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01269.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01266",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01266.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02534",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02534.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-AS-00729",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00729.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-MP-02535",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02535.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01498",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01498.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02840",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02840.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01265",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01265.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02844",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02844.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-MP-02539",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02539.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01270",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01270.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Set Screw  DIN 913 - M2x6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-03427",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03427.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02531",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02531.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "LeeSpring-El 011C 05 S316",
+      "path": "C:\\PDM\\Standard Library\\Springs\\LeeSpring-El 011C 05 S316.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-MP-02538",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02538.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "DIN 471 d3",
+      "path": "C:\\PDM\\Standard Library\\Circlips\\DIN 471 Spring St Retaining Ring for Shafts\\DIN 471 d3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-01492",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01492.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "MAE-STZR-M0.3-MS58",
+      "path": "C:\\PDM\\Standard Library\\gears\\MAE-STZR-M0.3-MS58.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "005-AS-01272",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01272.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01525",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01525.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-01349",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01349.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "FlexEncoder V2.2",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "DIN 912 M1.6x2",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 912 Socket Hd Cap Screws\\DIN 912 M1.6x2.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "005-MP-01849",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\005-MP-01849.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "FlexEncoder V2.1",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "Socket Head Cap Screw DIN 912 - M2 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "005-AS-01324",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01324.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "005-AS-01276",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01276.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "FlexEncoder V2.03_thumbflex2",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.03_thumbflex2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "005-AS-01301",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01301.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01834",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01834.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M2 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Maxon DCX 12_5_3",
+      "path": "C:\\PDM\\Standard Library\\Motors\\Maxon DCX 12_5_3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01300",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01300.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01297",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01297.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 6,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02132",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02132.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-00985",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00985.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01288",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01288.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01731",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01731.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01001",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01001.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "skf_bearing_w_638_2_5-2z_2",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\skf_bearing_w_638_2_5-2z_2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01492",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01492.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01287",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01287.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "MTA04-11-HP5DB",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\MTA04-11-HP5DB.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01037",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01037.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01809",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01809.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01025",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01025.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-00995",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00995.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01732",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01732.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01020",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01020.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-00994",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00994.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02133",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02133.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 10",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01292",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01292.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-MP-02538",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02538.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02808",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02808.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "LeeSpring-El 011C 05 S316",
+      "path": "C:\\PDM\\Standard Library\\Springs\\LeeSpring-El 011C 05 S316.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Set Screw  DIN 913 - M2x6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02807",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02807.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-03939",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03939.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-03937",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-03937.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-02809",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02809.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M2 x 10",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01264",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01264.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01410",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01410.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "DIN 471 d3",
+      "path": "C:\\PDM\\Standard Library\\Circlips\\DIN 471 Spring St Retaining Ring for Shafts\\DIN 471 d3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01450",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01450.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01609",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01609.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-02130",
+      "path": "C:\\PDM\\Projects\\005-Hands\\ILDA Hand\\05-MP-02130.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "MAE-STZR-M0.3-MS58",
+      "path": "C:\\PDM\\Standard Library\\gears\\MAE-STZR-M0.3-MS58.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Pin \u00d802x08 (m6)",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\ISO 2338 - Pin - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-MP-04502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-MP-04502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-01954",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01954.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "FlexEncoder V2.02_thumbflex",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.02_thumbflex.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-02866",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02866.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "DIN 912 M1.6x2",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 912 Socket Hd Cap Screws\\DIN 912 M1.6x2.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-01847",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01847.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "05-MP-01799",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01799.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "618 6",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\618 6.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "05-MP-01913",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01913.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 5,
+      "part_number": "005-AS-01322",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01322.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "005-AS-01311",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01311.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Pin \u00d802x06 (h8)",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\ISO 2338 - Pin - Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01259",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01259.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-MP-01849",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\005-MP-01849.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "FlexEncoder V2.1",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "FlexEncoder V2.2",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01309",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01309.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01349",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01349.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01271",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01271.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "DIN 471 d3",
+      "path": "C:\\PDM\\Standard Library\\Circlips\\DIN 471 Spring St Retaining Ring for Shafts\\DIN 471 d3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01275",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01275.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "92010A812",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X12.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01728",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01728.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01730",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01730.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-00985",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00985.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01260",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01260.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01731",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01731.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "DIN 912 M1.6x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 912 Socket Hd Cap Screws\\DIN 912 M1.6x6mm.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01001",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01001.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01732",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01732.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "DIN 6885A 2x2x8",
+      "path": "C:\\PDM\\Standard Library\\Keys\\Parallel Keys DIN 6885 A\\DIN 6885A 2x2x8.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01020",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01020.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "005-AS-01263",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01263.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01025",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01025.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00987",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00987.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "MTA04-11-HP5DB",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\MTA04-11-HP5DB.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01060",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01060.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "DIN 7991 M2x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 7991 Socket Flat Hd Screws\\DIN 7991 M2x6mm.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "W 638 2.5-2Z",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\W 638 2.5-2Z.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-AS-00358",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00358.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00994",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00994.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00995",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00995.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 6,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01264",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01264.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01410",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01410.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01450",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01450.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01269",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01269.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-AS-00729",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00729.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02840",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02840.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "005-MP-02535",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02535.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01498",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01498.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01266",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01266.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02534",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02534.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-MP-02538",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02538.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01270",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01270.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02531",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02531.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-03427",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03427.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Set Screw  DIN 913 - M2x6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-MP-02539",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02539.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01265",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01265.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02844",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02844.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01843",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01843.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01492",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01492.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "MAE-STZR-M0.3-MS58",
+      "path": "C:\\PDM\\Standard Library\\gears\\MAE-STZR-M0.3-MS58.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01272",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01272.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01525",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01525.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Maxon DCX 12_5_3",
+      "path": "C:\\PDM\\Standard Library\\Motors\\Maxon DCX 12_5_3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01033",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01033.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M2 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 8,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-MP-04224",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-MP-04224.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "005-AS-01259",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01259.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "FlexEncoder V2.1",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.1.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-AS-01309",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01309.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01492",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01492.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "MAE-STZR-M0.3-MS58",
+      "path": "C:\\PDM\\Standard Library\\gears\\MAE-STZR-M0.3-MS58.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01271",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01271.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01269",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01269.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01270",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01270.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02531",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02531.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-03427",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03427.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Set Screw  DIN 913 - M2x6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-MP-02539",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02539.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-AS-00729",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00729.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "005-MP-02535",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02535.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 5",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01498",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01498.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "Socket Set Screw  DIN 913 - M2x3",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 913 - Socket Set Screw Flat Point - Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02840",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02840.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01265",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01265.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02844",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02844.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01502",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01502.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01266",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01266.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-02534",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\05-MP-02534.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-MP-02538",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\shush de\\005-MP-02538.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01264",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01264.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01410",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01410.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01450",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01450.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01843",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01843.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "DIN 471 d3",
+      "path": "C:\\PDM\\Standard Library\\Circlips\\DIN 471 Spring St Retaining Ring for Shafts\\DIN 471 d3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "005-AS-01275",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01275.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01730",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01730.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-00985",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00985.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "005-AS-01260",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01260.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "DIN 6885A 2x2x8",
+      "path": "C:\\PDM\\Standard Library\\Keys\\Parallel Keys DIN 6885 A\\DIN 6885A 2x2x8.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01020",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01020.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "005-AS-01263",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01263.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01025",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01025.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00987",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00987.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "MTA04-11-HP5DB",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\MTA04-11-HP5DB.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-01060",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01060.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "DIN 7991 M2x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 7991 Socket Flat Hd Screws\\DIN 7991 M2x6mm.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "W 638 2.5-2Z",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\W 638 2.5-2Z.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-AS-00358",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00358.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00994",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00994.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 13,
+      "part_number": "05-MP-00995",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-00995.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01731",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01731.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "DIN 912 M1.6x6mm",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 912 Socket Hd Cap Screws\\DIN 912 M1.6x6mm.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01001",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01001.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 12,
+      "part_number": "05-MP-01732",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01732.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01088",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01088.SLDPRT",
+      "qty": 6,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "92010A812",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X12.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 11,
+      "part_number": "05-MP-01728",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01728.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "005-AS-01272",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01272.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "05-MP-01525",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01525.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 10,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Maxon DCX 12_5_3",
+      "path": "C:\\PDM\\Standard Library\\Motors\\Maxon DCX 12_5_3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 3,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 9,
+      "part_number": "05-MP-01349",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01349.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "FlexEncoder V2.2",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.2.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01033",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01033.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "DIN 965 M1.6X4",
+      "path": "C:\\PDM\\Standard Library\\Screws\\DIN 965 - Cross recessed countersunk flat head screws\\DIN 965 M1.6X4.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "005-MP-01849",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\005-MP-01849.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M4 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "005-AS-01319",
+      "path": "C:\\PDM\\Projects\\005-Hands\\HANDS UPDATE\\005-AS-01319.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 4",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "FlexEncoder V2.01",
+      "path": "C:\\PDM\\Standard Library\\encoder\\FlexEncoder V2.01.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-02143",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02143.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "skf_bearing_w_638_3-2z_2",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\skf_bearing_w_638_3-2z_2.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01624",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01624.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Din 965 - M1.6x5mm Phillips Flat Head Screw",
+      "path": "C:\\PDM\\Standard Library\\Screws\\Din 965 - M1.6x5mm Phillips Flat Head Screw.SLDPRT",
+      "qty": 7,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 12",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-AS-00574",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-AS-00574.SLDASM",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-01626",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01626.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-02158",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02158.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 8,
+      "part_number": "05-MP-02157",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02157.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Magnet 6x2.5",
+      "path": "C:\\PDM\\Standard Library\\elecric parts and sensors\\Magnet 6x2.5.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01821",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01821.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "F3-7M Bearing",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\F3-7M Bearing.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01598",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01598.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Socket Head Cap Screw DIN 912 - M1.6 x 10",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "Maxon DCX 12_5_3",
+      "path": "C:\\PDM\\Standard Library\\Motors\\Maxon DCX 12_5_3.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "125-008-250",
+      "path": "C:\\PDM\\Standard Library\\Springs\\125-008-250.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-02144",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02144.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 7,
+      "part_number": "05-MP-01631",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-01631.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 6,
+      "part_number": "Pin \u00d803x05 (h8)",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\ISO 2338 - Pin - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M2 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 8,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "Pin \u00d802x06 (h8)",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\ISO 2338 - Pin - Modular.SLDPRT",
+      "qty": 4,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 4,
+      "part_number": "05-MP-02082",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-02082.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 3,
+      "part_number": "05-MP-03286",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03286.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M3 x 10",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 2,
+      "part_number": "618 6",
+      "path": "C:\\PDM\\Standard Library\\Bearing\\618 6.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "Socket Flat Head Screw DIN 7991 - M2 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 7991 - Countersunk Screw - Modular.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "05-MP-03749",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03749.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "Socket Head Cap Screw DIN 912 - M2 x 8",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 5,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "05-MP-03753",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03753.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "005-MP-04537",
+      "path": "C:\\PDM\\Projects\\005-Hands\\005-MP-04537.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "Socket Head Cap Screw DIN 912 - M2 x 6",
+      "path": "C:\\PDM\\Standard Library\\Modular Toolbox\\DIN 912 - Socket Head Screw- Modular.SLDPRT",
+      "qty": 2,
+      "revision": "",
+      "description": "",
+      "state": ""
+    },
+    {
+      "level": 1,
+      "part_number": "05-MP-03751",
+      "path": "C:\\PDM\\Projects\\005-Hands\\Simple Hand\\05-MP-03751.SLDPRT",
+      "qty": 1,
+      "revision": "",
+      "description": "",
+      "state": ""
+    }
+  ]
+}

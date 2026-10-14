@@ -1,0 +1,328 @@
+{% extends "base.html" %}
+
+{% block title %}Purchases - MenteeBOM{% endblock %}
+
+{% block extra_css %}
+<style>
+    .purchases-table {
+        font-size: 0.9rem;
+    }
+    .purchases-table th {
+        background-color: #f8f9fa;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .status-badge {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    .status-active { background-color: #28a745; color: white; }
+    .status-converted { background-color: #17a2b8; color: white; }
+    .status-pending { background-color: #ffc107; color: black; }
+    .status-sent { background-color: #17a2b8; color: white; }
+    .status-received { background-color: #28a745; color: white; }
+    .status-cancelled { background-color: #dc3545; color: white; }
+    .table-responsive {
+        max-height: 600px;
+        overflow-y: auto;
+    }
+    .expandable-row {
+        cursor: pointer;
+    }
+    .expandable-row:hover {
+        background-color: #f8f9fa;
+    }
+    .details-row {
+        display: none;
+    }
+    .details-row.show {
+        display: table-row;
+    }
+    
+    /* Price Validation Modal Styles */
+    .price-input {
+        width: 100px;
+    }
+    .price-missing {
+        border: 2px solid #dc3545 !important;
+        background-color: #f8d7da;
+    }
+    .price-dropdown {
+        width: 120px;
+    }
+    .part-row {
+        vertical-align: middle;
+    }
+    .remove-part-btn {
+        color: #dc3545;
+        border: none;
+        background: none;
+        padding: 0.25rem 0.5rem;
+    }
+    .remove-part-btn:hover {
+        color: #a71e2a;
+        background-color: #f8d7da;
+        border-radius: 0.25rem;
+    }
+    .price-option {
+        font-size: 0.875rem;
+        color: #6c757d;
+    }
+    .missing-price-badge {
+        background-color: #dc3545;
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Page Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h1 class="h3 mb-0">Purchases Management</h1>
+            <p class="text-muted">Manage RFQs and Purchase Orders</p>
+        </div>
+    </div>
+
+    <!-- RFQ Table -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">RFQ Table</h5>
+                    <button class="btn btn-sm btn-primary" onclick="refreshRFQs()">
+                        <i class="fas fa-sync-alt me-1"></i>Refresh
+                    </button>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover purchases-table mb-0" id="rfqTable">
+                            <thead>
+                                <tr>
+                                    <th>BOM Name</th>
+                                    <th>BOM Revision</th>
+                                    <th>RFQ Name</th>
+                                    <th>Date Created</th>
+                                    <th>Parts Count</th>
+                                    <th>Status</th>
+                                    <th>Notes</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rfqTableBody">
+                                <tr>
+                                    <td colspan="8" class="text-center text-muted py-4">
+                                        <i class="fas fa-spinner fa-spin me-2"></i>Loading RFQs...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PO Table -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">PO Table</h5>
+                    <button class="btn btn-sm btn-primary" onclick="refreshPOs()">
+                        <i class="fas fa-sync-alt me-1"></i>Refresh
+                    </button>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover purchases-table mb-0" id="poTable">
+                            <thead>
+                                <tr>
+                                    <th>PO Number</th>
+                                    <th>BOM Name</th>
+                                    <th>BOM Revision</th>
+                                    <th>Vendor</th>
+                                    <th>PO Date</th>
+                                    <th>Total Cost</th>
+                                    <th>Parts Count</th>
+                                    <th>PO Received</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="poTableBody">
+                                <tr>
+                                    <td colspan="10" class="text-center text-muted py-4">
+                                        <i class="fas fa-spinner fa-spin me-2"></i>Loading POs...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PO Creation Modal -->
+<div class="modal fade" id="poCreationModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create PO from RFQ</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="poCreationForm">
+                    <input type="hidden" id="rfqIdForPO" name="rfq_id">
+                    <div class="mb-3">
+                        <label for="poNumber" class="form-label">PO Number <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="poNumber" name="po_number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="vendor" class="form-label">Vendor <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="vendor" name="vendor" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="quotationFile" class="form-label">Quotation (Optional)</label>
+                        <input type="file" class="form-control" id="quotationFile" name="quotation" accept=".pdf,.png,.jpg,.jpeg">
+                        <small class="form-text text-muted">Upload PDF or image to extract pricing automatically</small>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="submitPOCreation()">
+                    <i class="fas fa-check me-1"></i>Create PO
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmationModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmationModalTitle">Confirm Action</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body" id="confirmationModalBody">
+                <!-- Content will be set dynamically -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="confirmButton">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Price Validation Modal -->
+<div class="modal fade" id="priceValidationModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="priceValidationModalTitle">PO Price Validation - PO <span id="poNumberDisplay"></span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Parts Table -->
+                <div class="table-responsive mb-4">
+                    <table class="table table-hover" id="priceValidationTable">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Part Number</th>
+                                <th>Revision</th>
+                                <th>Qty</th>
+                                <th>Unit Cost</th>
+                                <th>Total Cost</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="priceValidationTableBody">
+                            <!-- Parts will be populated here -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Upload Additional Quotations Section -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="mb-0">Upload Additional Quotations</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="file" class="form-control" id="additionalQuotationFiles" name="quotation" multiple accept=".pdf,.png,.jpg,.jpeg">
+                                <small class="form-text text-muted">Select multiple quotation files to process</small>
+                            </div>
+                            <div class="col-md-4">
+                                <button type="button" class="btn btn-outline-primary" onclick="uploadAdditionalQuotation()">
+                                    <i class="fas fa-upload me-1"></i>Process Quotations
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Summary Section -->
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="mb-0">PO Summary</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <h5 class="mb-0" id="totalPartsCount">0</h5>
+                                    <small class="text-muted">Total Parts</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <h5 class="mb-0 text-success" id="partsWithPricesCount">0</h5>
+                                    <small class="text-muted">Parts with Prices</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <h5 class="mb-0 text-danger" id="missingPricesCount">0</h5>
+                                    <small class="text-muted">Missing Prices</small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-center">
+                                    <h5 class="mb-0 text-primary" id="totalPOCost">$0.00</h5>
+                                    <small class="text-muted">Total PO Cost</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" id="exportPOButton" onclick="exportFinalPO()" disabled>
+                    <i class="fas fa-file-export me-1"></i>Export PO
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/purchases.js') }}"></script>
+{% endblock %}
+

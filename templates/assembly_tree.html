@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}Assembly Tree - MenteeBOM{% endblock %}
+
+{% block extra_css %}
+<link href="{{ url_for('static', filename='css/assembly_tree.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Page Header -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="h3 mb-0">Assembly Tree Visualization</h1>
+                    <p class="text-muted">Interactive hierarchical view of your assembly structure</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Left Panel: BOM Selection -->
+        <div class="col-md-3">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                        <i class="fas fa-database me-2"></i>Select BOM
+                    </h6>
+                </div>
+                <div class="card-body p-0">
+                    <div id="bomListContainer" class="bom-list-scrollable">
+                        <div class="text-center text-muted py-4">
+                            <i class="fas fa-spinner fa-spin fa-2x mb-2"></i>
+                            <p class="mb-0">Loading BOMs...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Tree Visualization -->
+        <div class="col-md-9">
+            <div class="card h-100">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                        <i class="fas fa-project-diagram me-2"></i>
+                        <span id="currentBomName">Assembly Tree</span>
+                    </h6>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="expandAllBtn" title="Expand All">
+                            <i class="fas fa-expand-alt"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="collapseAllBtn" title="Collapse All">
+                            <i class="fas fa-compress-alt"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="zoomInBtn" title="Zoom In">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="zoomOutBtn" title="Zoom Out">
+                            <i class="fas fa-search-minus"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="fitBtn" title="Fit to Screen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-primary" id="centerBtn" title="Center View">
+                            <i class="fas fa-crosshairs"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0 position-relative">
+                    <!-- Tree visualization container -->
+                    <div id="treeContainer" class="tree-container">
+                        <div class="text-center text-muted py-5">
+                            <i class="fas fa-project-diagram fa-3x mb-3"></i>
+                            <p class="mb-0">Select a BOM to view its assembly tree</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Thumbnail tooltip -->
+                    <div id="thumbnailTooltip" class="thumbnail-tooltip">
+                        <div class="thumbnail-tooltip-header">
+                            <span id="tooltipPartNumber"></span>
+                            <button type="button" class="btn-close btn-close-white btn-sm" onclick="hideThumbnailTooltip()"></button>
+                        </div>
+                        <div class="thumbnail-tooltip-body">
+                            <img id="tooltipThumbnail" src="" alt="Part thumbnail">
+                            <div class="tooltip-info">
+                                <p class="mb-1"><strong>Description:</strong> <span id="tooltipDescription"></span></p>
+                                <p class="mb-1"><strong>Revision:</strong> <span id="tooltipRevision"></span></p>
+                                <p class="mb-0"><strong>Quantity:</strong> <span id="tooltipQuantity"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<!-- D3.js for tree visualization -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{{ url_for('static', filename='js/assembly_tree.js') }}"></script>
+<script>
+    // Check if D3.js is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM Content Loaded');
+        console.log('D3.js available:', typeof d3 !== 'undefined');
+        
+        if (typeof d3 === 'undefined') {
+            console.error('D3.js library not loaded!');
+            document.getElementById('treeContainer').innerHTML = `
+                <div class="text-center text-danger py-5">
+                    <i class="fas fa-exclamation-triangle fa-3x mb-3"></i>
+                    <h5>D3.js Library Not Loaded</h5>
+                    <p class="mb-0">Please check your internet connection and refresh the page.</p>
+                </div>
+            `;
+            return;
+        }
+        
+        // Initialize on page load
+        loadBOMList();
+    });
+</script>
+{% endblock %}
+

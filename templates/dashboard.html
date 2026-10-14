@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - MenteeBOM{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Welcome Section -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="h3 mb-0">Welcome back, {{ current_user.username }}!</h1>
+                    <p class="text-muted">Manage your Bill of Materials efficiently</p>
+                </div>
+                <div class="text-end">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row mb-4">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                Total BOMs
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="total-boms">-</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-list fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Active RFQs
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="active-rfqs">-</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-file-invoice fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-info shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                Pending POs
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="pending-pos">-</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-shopping-cart fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card border-left-warning shadow h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                Database Size
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800" id="db-size">-</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-database fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Quick Navigation</h6>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <a href="{{ url_for('assembly_bom') }}" class="btn btn-primary btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                <i class="fas fa-list fa-2x mb-2"></i>
+                                <span>Assembly BOM</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <a href="{{ url_for('assembly_tree') }}" class="btn btn-success btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                <i class="fas fa-project-diagram fa-2x mb-2"></i>
+                                <span>Assembly Tree</span>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <a href="{{ url_for('purchases') }}" class="btn btn-info btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                <i class="fas fa-shopping-cart fa-2x mb-2"></i>
+                                <span>Purchases</span>
+                            </a>
+                        </div>
+                        {% if current_user.role == 'admin' %}
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <a href="{{ url_for('admin') }}" class="btn btn-warning btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                                <i class="fas fa-user-shield fa-2x mb-2"></i>
+                                <span>Admin</span>
+                            </a>
+                        </div>
+                        {% else %}
+                        <div class="col-lg-3 col-md-6 mb-3">
+                            <div class="btn btn-secondary btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center" style="opacity: 0.5; cursor: not-allowed;">
+                                <i class="fas fa-lock fa-2x mb-2"></i>
+                                <span>Admin</span>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Recent BOM Activity</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover" id="recent-activity-table">
+                            <thead>
+                                <tr>
+                                    <th>BOM Name</th>
+                                    <th>Version</th>
+                                    <th>Last Modified</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Data will be loaded via JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">System Status</h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Google Sheets Connection</span>
+                            <span class="badge bg-success" id="sheets-badge">Connected</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>PDM Integration</span>
+                            <span class="badge bg-warning" id="pdm-badge">Pending</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Database</span>
+                            <span class="badge bg-success" id="db-badge">Online</span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>File System</span>
+                            <span class="badge bg-success" id="fs-badge">Accessible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Load dashboard data when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadDashboardData();
+});
+
+function loadDashboardData() {
+    // Load dashboard stats
+    fetch('/api/dashboard-stats')
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Update stats cards
+                document.getElementById('total-boms').textContent = data.stats.total_boms;
+                document.getElementById('active-rfqs').textContent = data.stats.active_rfqs;
+                document.getElementById('pending-pos').textContent = data.stats.pending_pos;
+                document.getElementById('db-size').textContent = data.stats.db_size;
+                
+                // Update recent activity table
+                updateRecentActivityTable(data.recent_activity);
+            } else {
+                console.error('Error loading dashboard stats:', data.error);
+            }
+        })
+        .catch(error => {
+            console.error('Error loading dashboard data:', error);
+            document.getElementById('total-boms').textContent = '0';
+            document.getElementById('active-rfqs').textContent = '0';
+            document.getElementById('pending-pos').textContent = '0';
+        });
+}
+
+function updateRecentActivityTable(activity) {
+    const tbody = document.querySelector('#recent-activity-table tbody');
+    tbody.innerHTML = '';
+    
+    if (activity.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" class="text-center text-muted">No recent activity</td></tr>';
+        return;
+    }
+    
+    activity.forEach(bom => {
+        const row = document.createElement('tr');
+        const updatedDate = bom.updated_at ? new Date(bom.updated_at).toLocaleDateString() : 'N/A';
+        const statusBadge = bom.status === 'active' ? 'bg-success' : bom.status === 'obsolete' ? 'bg-secondary' : 'bg-warning';
+        
+        row.innerHTML = `
+            <td><a href="{{ url_for('assembly_bom') }}?bom_id=${bom.id}" class="text-decoration-none">${bom.name}</a></td>
+            <td>${bom.version || 'N/A'}</td>
+            <td>${updatedDate}</td>
+            <td><span class="badge ${statusBadge}">${bom.status || 'active'}</span></td>
+            <td>
+                <a href="{{ url_for('assembly_bom') }}?bom_id=${bom.id}" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-eye"></i> View
+                </a>
+            </td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+</script>
+{% endblock %}
+

@@ -1,0 +1,77 @@
+.bom-table-container {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: clamp(50vh, 60vh, 70vh);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/* Dark mode support */
+[data-theme="dark"] .bom-table-container,
+.MuiDataGrid-root[data-theme="dark"] ~ .bom-table-container {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bom-table {
+  width: 100%;
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.bom-table th,
+.bom-table td {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .bom-table th,
+[data-theme="dark"] .bom-table td {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.bom-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .bom-table th {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.bom-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .bom-table tbody tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.bom-table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Dark mode support */
+[data-theme="dark"] .bom-table tbody tr:hover {
+  background-color: #3a3a3a;
+}
+
+/* Large screens: more padding for readability */
+@media (min-width: 2560px) {
+  .bom-table th,
+  .bom-table td {
+    padding: 12px 16px;
+  }
+}
