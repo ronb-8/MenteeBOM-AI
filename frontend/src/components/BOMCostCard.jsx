@@ -20,9 +20,10 @@ import {
     ExpandMore as ExpandMoreIcon,
     ExpandLess as ExpandLessIcon,
 } from '@mui/icons-material'
-import { formatPrice } from '../utils/priceFormatter'
+import { useCurrency } from '../context/CurrencyContext'
 
 const BOMCostCard = ({ bomData }) => {
+    const { formatCost } = useCurrency()
     const [expanded, setExpanded] = useState(true)
     const [typeBreakdownExpanded, setTypeBreakdownExpanded] = useState({})
 
@@ -38,14 +39,14 @@ const BOMCostCard = ({ bomData }) => {
                         <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
                             {bomData.assembly_unit_cost != null && (
                                 <Chip
-                                    label={`Assembly Price: $${formatPrice(bomData.assembly_unit_cost)}`}
+                                    label={`Assembly Price: ${formatCost(bomData.assembly_unit_cost)}`}
                                     color="default"
                                     size="small"
                                     variant="outlined"
                                 />
                             )}
                             <Typography variant="h6" color="primary" sx={{ fontWeight: 'bold' }}>
-                                ${formatPrice(bomData.total_cost)}
+                                {formatCost(bomData.total_cost)}
                             </Typography>
                         </Box>
                     </Box>
@@ -69,7 +70,7 @@ const BOMCostCard = ({ bomData }) => {
                                 {totalByType.map(([type, cost]) => (
                                     <Chip
                                         key={type}
-                                        label={`${type}: $${formatPrice(cost)}`}
+                                        label={`${type}: ${formatCost(cost)}`}
                                         color="primary"
                                         variant="outlined"
                                     />
@@ -122,7 +123,7 @@ const BOMCostCard = ({ bomData }) => {
                                                 }))}
                                             >
                                                 <Typography variant="body2" fontWeight="medium">
-                                                    {type} ({parts.length} parts) - Total: ${formatPrice(typeTotal)}
+                                                    {type} ({parts.length} parts) - Total: {formatCost(typeTotal)}
                                                 </Typography>
                                                 <IconButton size="small">
                                                     {isExpanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
@@ -150,10 +151,10 @@ const BOMCostCard = ({ bomData }) => {
                                                                         </TableCell>
                                                                         <TableCell>{part.description || '-'}</TableCell>
                                                                         <TableCell align="right">{part.quantity}</TableCell>
-                                                                        <TableCell align="right">${formatPrice(part.unit_cost || 0)}</TableCell>
+                                                                        <TableCell align="right">{formatCost(part.unit_cost || 0)}</TableCell>
                                                                         <TableCell align="right">
                                                                             <Typography fontWeight="medium">
-                                                                                ${formatPrice(part.total_cost || 0)}
+                                                                                {formatCost(part.total_cost || 0)}
                                                                             </Typography>
                                                                         </TableCell>
                                                                     </TableRow>

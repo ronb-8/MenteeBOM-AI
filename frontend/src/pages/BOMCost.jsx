@@ -9,7 +9,8 @@ import {
 } from '@mui/material'
 import { useNotification } from '../context/NotificationContext'
 import { bomCostService } from '../services/bomCostService'
-import { formatPrice } from '../utils/priceFormatter'
+import { CurrencyProvider, useCurrency } from '../context/CurrencyContext'
+import CurrencySelector from '../components/bom-cost/CurrencySelector'
 import CostSummaryCards from '../components/bom-cost/CostSummaryCards'
 import ConsolidatedBomView from '../components/bom-cost/ConsolidatedBomView'
 
@@ -39,8 +40,9 @@ const pointsToSmoothPath = (points, tension = 0.3) => {
     return d
 }
 
-const BOMCost = () => {
+const BOMCostDashboard = () => {
     const { showNotification } = useNotification()
+    const { formatCost } = useCurrency()
 
     // Robot figures (tabs)
     const [figures, setFigures] = useState([])
@@ -193,6 +195,7 @@ const BOMCost = () => {
                         Cost analysis by robot figure with breakdowns by type, vendor, and category
                     </Typography>
                 </Box>
+                <CurrencySelector />
             </Box>
 
             {figuresLoading && (
@@ -251,7 +254,7 @@ const BOMCost = () => {
                                     return (
                                         <Chip
                                             key={d.dissolved_bom_id}
-                                            label={`${d.name} — $${formatPrice(d.cost)}`}
+                                            label={`${d.name} — ${formatCost(d.cost)}`}
                                             onClick={() => handleToggle(d.dissolved_bom_id)}
                                             color={isSelected ? 'primary' : 'default'}
                                             variant={isSelected ? 'filled' : 'outlined'}
@@ -353,7 +356,7 @@ const BOMCost = () => {
                                                                 fontWeight="500"
                                                                 style={{ pointerEvents: 'none' }}
                                                             >
-                                                                ${formatPrice(d.cost)}
+                                                                {formatCost(d.cost)}
                                                             </text>
                                                         </g>
                                                     )
@@ -399,5 +402,11 @@ const BOMCost = () => {
         </Box>
     )
 }
+
+const BOMCost = () => (
+    <CurrencyProvider>
+        <BOMCostDashboard />
+    </CurrencyProvider>
+)
 
 export default BOMCost

@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import * as d3 from 'd3'
 import { Box, Typography, useTheme } from '@mui/material'
+import { useCurrency } from '../../context/CurrencyContext'
 
 const DEFAULT_COLORS = [
   '#4B2C6F', '#1976d2', '#2e7d32', '#ed6c02', '#d32f2f',
@@ -21,7 +22,8 @@ const CostDonutChart = ({
   const svgRef = useRef(null)
   const theme = useTheme()
 
-  const fmt = formatValue || ((v) => `$${v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`)
+  const { formatCost } = useCurrency()
+  const fmt = formatValue || formatCost
 
   useEffect(() => {
     if (!svgRef.current || !data.length) return
@@ -157,7 +159,7 @@ const CostDonutChart = ({
       .delay((d, i) => i * 80)
       .attr('opacity', 1)
 
-  }, [data, width, height, innerRadiusRatio, theme, totalOverride])
+  }, [data, width, height, innerRadiusRatio, theme, totalOverride, fmt])
 
   if (!data.length) {
     return (
