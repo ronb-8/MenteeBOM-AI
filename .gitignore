@@ -1,0 +1,2 @@
+# Secrets (Jira API token etc.) must never be committed
+.env

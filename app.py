@@ -1607,6 +1607,10 @@ app.register_blueprint(stockwise_admin_bp)
 from notifications_api import notifications_bp
 app.register_blueprint(notifications_bp)
 
+# Register in-app bug reporter (creates Jira tickets — see bug_report_api.py)
+from bug_report_api import bug_report_bp
+app.register_blueprint(bug_report_bp)
+
 # ── Live-update version bumps ────────────────────────────────────────────────
 # Bump the matching poll channel whenever rows of these model groups change,
 # no matter which endpoint did it. Browsers polling /api/poll/updates refetch

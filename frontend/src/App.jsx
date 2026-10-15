@@ -20,6 +20,7 @@ import EmbedStageView from './components/robot-assembly/EmbedStageView'
 import EmbedLimbStageView from './components/robot-assembly/EmbedLimbStageView'
 import ProtectedRoute from './components/ProtectedRoute'
 import Navigation from './components/Navigation'
+import BugReportButton from './components/BugReportButton'
 import './App.css'
 
 const AppContent = () => {
@@ -129,6 +130,7 @@ const AppContent = () => {
               } />
               <Route path="*" element={<Navigate to="/dashboard" replace />} />
             </Routes>
+            <BugReportButton />
           </BrowserRouter>
         </NotificationProvider>
       </AuthProvider>
