@@ -7,10 +7,11 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew'
 import CloseIcon from '@mui/icons-material/Close'
 import BOMCostCard from '../BOMCostCard'
 import CostDonutChart from './CostDonutChart'
-import { formatPrice } from '../../utils/priceFormatter'
+import { useCurrency } from '../../context/CurrencyContext'
 import { bomCostService } from '../../services/bomCostService'
 
 const ConsolidatedPartsTable = ({ parts }) => {
+  const { formatCost } = useCurrency()
   const [expandedTypes, setExpandedTypes] = useState({})
 
   const byType = useMemo(() => {
@@ -43,7 +44,7 @@ const ConsolidatedPartsTable = ({ parts }) => {
               onClick={() => setExpandedTypes(prev => ({ ...prev, [type]: !isExpanded }))}
             >
               <Typography variant="body2" fontWeight="medium">
-                {type} ({typeParts.length} parts) — ${formatPrice(typeTotal)}
+                {type} ({typeParts.length} parts) — {formatCost(typeTotal)}
               </Typography>
               <Typography variant="caption" color="text.secondary">
                 {isExpanded ? 'collapse' : 'expand'}
@@ -69,8 +70,8 @@ const ConsolidatedPartsTable = ({ parts }) => {
                         <td style={{ padding: '4px 12px' }}>{p.description || '-'}</td>
                         <td style={{ padding: '4px 12px' }}>{p.vendor || '-'}</td>
                         <td style={{ padding: '4px 12px', textAlign: 'right' }}>{p.quantity}</td>
-                        <td style={{ padding: '4px 12px', textAlign: 'right' }}>${formatPrice(p.unit_cost || 0)}</td>
-                        <td style={{ padding: '4px 12px', textAlign: 'right', fontWeight: 600 }}>${formatPrice(p.total_cost || 0)}</td>
+                        <td style={{ padding: '4px 12px', textAlign: 'right' }}>{formatCost(p.unit_cost || 0)}</td>
+                        <td style={{ padding: '4px 12px', textAlign: 'right', fontWeight: 600 }}>{formatCost(p.total_cost || 0)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -86,6 +87,7 @@ const ConsolidatedPartsTable = ({ parts }) => {
 
 /** Simple sortable parts table used inside the drill-down dialog */
 const DrillDownTable = ({ rows, columns }) => {
+  const { formatCost } = useCurrency()
   const [orderBy, setOrderBy] = useState(columns[0]?.key || '')
   const [orderDir, setOrderDir] = useState('asc')
 
@@ -126,7 +128,7 @@ const DrillDownTable = ({ rows, columns }) => {
             <TableRow key={i} hover>
               {columns.map(col => (
                 <TableCell key={col.key} align={col.align || 'left'}>
-                  {col.format ? col.format(row[col.key], row) : (row[col.key] ?? '—')}
+                  {col.currency ? formatCost(row[col.key] || 0) : col.format ? col.format(row[col.key], row) : (row[col.key] ?? '—')}
                 </TableCell>
               ))}
             </TableRow>
@@ -174,18 +176,19 @@ const PART_COLS_WITH_VENDOR = [
   { key: 'part_type', label: 'Part Type' },
   { key: 'vendor', label: 'Vendor' },
   { key: 'quantity', label: 'Qty', align: 'right' },
-  { key: 'unit_cost', label: 'Unit Cost', align: 'right', format: v => `$${formatPrice(v || 0)}` },
-  { key: 'total_cost', label: 'Total', align: 'right', format: v => `$${formatPrice(v || 0)}` },
+  { key: 'unit_cost', label: 'Unit Cost', align: 'right', currency: true },
+  { key: 'total_cost', label: 'Total', align: 'right', currency: true },
 ]
 const PART_COLS_NO_VENDOR = PART_COLS_WITH_VENDOR.filter(c => c.key !== 'vendor')
 const VENDOR_SUMMARY_COLS = [
   { key: 'vendor', label: 'Vendor' },
-  { key: 'total_cost', label: 'Total Cost', align: 'right', format: v => `$${formatPrice(v || 0)}` },
+  { key: 'total_cost', label: 'Total Cost', align: 'right', currency: true },
   { key: 'part_count', label: 'Parts', align: 'right' },
 ]
 
 /** Reconciliation panel: compares sum-by-type vs sum-by-vendor and surfaces data quality issues */
 const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
+  const { formatCost } = useCurrency()
   const [dialog, setDialog] = useState(null) // { type, title, subtitle, rows, columns }
 
   const { grandTotal, missingVendor, missingType, zeroCost, hiddenVendorRows } = useMemo(() => {
@@ -230,7 +233,7 @@ const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
 
         <Chip
           size="small"
-          label={`By Type = By Vendor = $${formatPrice(grandTotal)}`}
+          label={`By Type = By Vendor = ${formatCost(grandTotal)}`}
           color="success"
           variant="outlined"
         />
@@ -239,7 +242,7 @@ const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
           <Tooltip title="Click to see which vendors are not shown in the chart">
             <Chip
               size="small"
-              label={`Vendor chart: top 10 only — $${formatPrice(hiddenCost)} hidden`}
+              label={`Vendor chart: top 10 only — ${formatCost(hiddenCost)} hidden`}
               color="info"
               variant="outlined"
               onClick={() => open('hidden', 'Vendors hidden from chart', `These ${hiddenVendorRows.length} vendor(s) are excluded from the "top 10" donut chart. Their costs are still included in the totals.`, hiddenVendorRows, VENDOR_SUMMARY_COLS)}
@@ -252,7 +255,7 @@ const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
           <Tooltip title="Click to see parts with no vendor">
             <Chip
               size="small"
-              label={`${missingVendor.length} part(s) no vendor ($${formatPrice(missingVendor.reduce((s, p) => s + (p.total_cost || 0), 0))})`}
+              label={`${missingVendor.length} part(s) no vendor (${formatCost(missingVendor.reduce((s, p) => s + (p.total_cost || 0), 0))})`}
               color="warning"
               variant="filled"
               onClick={() => open('noVendor', 'Parts with no vendor assigned', 'These parts have an empty or unknown vendor field. They appear under "Unknown" in the vendor grouping and can\'t be exported by vendor correctly.', missingVendor, PART_COLS_NO_VENDOR)}
@@ -265,7 +268,7 @@ const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
           <Tooltip title="Click to see parts with no part type">
             <Chip
               size="small"
-              label={`${missingType.length} part(s) no type ($${formatPrice(missingType.reduce((s, p) => s + (p.total_cost || 0), 0))})`}
+              label={`${missingType.length} part(s) no type (${formatCost(missingType.reduce((s, p) => s + (p.total_cost || 0), 0))})`}
               color="warning"
               variant="filled"
               onClick={() => open('noType', 'Parts with no part type assigned', 'These parts have an empty or unknown part_type field. They appear under "Unknown" in the part type grouping.', missingType, PART_COLS_WITH_VENDOR)}
@@ -281,7 +284,7 @@ const CostReconciliationPanel = ({ allParts, vendorChartData }) => {
               label={`${zeroCost.length} part(s) missing unit cost`}
               color="error"
               variant="outlined"
-              onClick={() => open('zeroCost', 'Parts missing unit cost', 'These parts have qty > 0 but a unit cost of $0. They contribute $0 to the total. Update their price in the Parts Library to fix this.', zeroCost, PART_COLS_WITH_VENDOR)}
+              onClick={() => open('zeroCost', 'Parts missing unit cost', 'These parts have qty > 0 but no unit cost. They contribute nothing to the total. Update their price in the Parts Library to fix this.', zeroCost, PART_COLS_WITH_VENDOR)}
               sx={{ fontSize: '0.7rem', cursor: 'pointer' }}
             />
           </Tooltip>
@@ -338,6 +341,7 @@ const computeChartData = (parts, vendorToCategory) => {
 }
 
 const ConsolidatedBomView = ({ detailedResults, selectedItems, badgeId }) => {
+  const { formatCost } = useCurrency()
   const [activeTab, setActiveTab] = useState(0)
   const [exportAnchor, setExportAnchor] = useState(null)
   const [exporting, setExporting] = useState(false)
@@ -460,7 +464,7 @@ const ConsolidatedBomView = ({ detailedResults, selectedItems, badgeId }) => {
       {/* Header row: total + export button */}
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
         <Typography variant="subtitle1" fontWeight={600}>
-          Total: ${formatPrice(totalCost)}
+          Total: {formatCost(totalCost)}
         </Typography>
         <Tooltip title="Download Excel — compatible with Google Sheets">
           <span>
@@ -572,8 +576,8 @@ const ConsolidatedBomView = ({ detailedResults, selectedItems, badgeId }) => {
         <Box>
           <Typography variant="subtitle2" sx={{ fontWeight: 600, mb: 1 }}>
             {isSingle
-              ? `${boms[0]?.bom_name} — ${(boms[0]?.direct_parts || []).length} parts — Total: $${formatPrice(boms[0]?.total_cost || 0)}`
-              : `Consolidated Parts (${consolidatedParts.length} unique parts) — Total: $${formatPrice(totalCost)}`
+              ? `${boms[0]?.bom_name} — ${(boms[0]?.direct_parts || []).length} parts — Total: ${formatCost(boms[0]?.total_cost || 0)}`
+              : `Consolidated Parts (${consolidatedParts.length} unique parts) — Total: ${formatCost(totalCost)}`
             }
           </Typography>
           <ConsolidatedPartsTable parts={isSingle ? (boms[0]?.direct_parts || []) : consolidatedParts} />

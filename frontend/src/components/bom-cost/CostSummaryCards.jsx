@@ -3,7 +3,7 @@ import AttachMoneyIcon from '@mui/icons-material/AttachMoney'
 import ListAltIcon from '@mui/icons-material/ListAlt'
 import AccountTreeIcon from '@mui/icons-material/AccountTree'
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'
-import { formatPrice } from '../../utils/priceFormatter'
+import { useCurrency } from '../../context/CurrencyContext'
 
 const MetricCard = ({ icon: Icon, label, value, color = 'primary.main', subtitle }) => (
   <Card
@@ -33,12 +33,13 @@ const MetricCard = ({ icon: Icon, label, value, color = 'primary.main', subtitle
 )
 
 const CostSummaryCards = ({ totalCost = 0, bomCount = 0, limbCount = 0, topLimb = null }) => {
+  const { formatCost } = useCurrency()
   return (
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', mb: 2 }}>
       <MetricCard
         icon={AttachMoneyIcon}
         label="Total Cost"
-        value={`$${formatPrice(totalCost)}`}
+        value={formatCost(totalCost)}
         color="primary.main"
       />
       <MetricCard
@@ -58,7 +59,7 @@ const CostSummaryCards = ({ totalCost = 0, bomCount = 0, limbCount = 0, topLimb 
           icon={TrendingUpIcon}
           label="Most Expensive Limb"
           value={topLimb.name}
-          subtitle={`$${formatPrice(topLimb.cost)}`}
+          subtitle={formatCost(topLimb.cost)}
           color="warning.main"
         />
       )}
