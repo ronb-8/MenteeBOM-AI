@@ -109,21 +109,30 @@ const BOMCost = () => {
         }
     }, [badgeId])
 
-    // Auto-calculate when selection changes
+    // Only show dissolved BOMs that have regions mapped to this robot figure
+    const activeBoms = useMemo(() => dissolvedBoms.filter(d => d.region_coords), [dissolvedBoms])
+
+    // With no explicit selection, the totals cover every Limbs BOM mapped to the figure
+    const calculationIds = useMemo(
+        () => (selectedIds.length > 0 ? selectedIds : activeBoms.map(d => d.dissolved_bom_id)),
+        [selectedIds, activeBoms]
+    )
+
+    // Auto-calculate when selection (or the set of mapped BOMs) changes
     useEffect(() => {
-        if (selectedIds.length === 0) {
+        if (calculationIds.length === 0) {
             setDetailedResults(null)
             return
         }
-        const timer = setTimeout(() => performCalculation(), 250)
+        const timer = setTimeout(() => performCalculation(calculationIds), 250)
         return () => clearTimeout(timer)
-    }, [selectedIds])
+    }, [calculationIds])
 
-    const performCalculation = async () => {
-        if (selectedIds.length === 0) return
+    const performCalculation = async (ids) => {
+        if (ids.length === 0) return
         setCalculating(true)
         try {
-            const items = selectedIds.map(id => ({ type: 'dissolved', id }))
+            const items = ids.map(id => ({ type: 'dissolved', id }))
             const res = await bomCostService.calculateMixedCosts(items, badgeId)
             setDetailedResults(res.data)
         } catch (err) {
@@ -166,9 +175,6 @@ const BOMCost = () => {
     }, [imageNaturalSize, imageDisplaySize])
 
     const totalCost = detailedResults?.project_total || 0
-
-    // Only show dissolved BOMs that have regions mapped to this robot figure
-    const activeBoms = dissolvedBoms.filter(d => d.region_coords)
 
     // Top limb (most expensive selected)
     const topLimb = useMemo(() => {
@@ -281,7 +287,7 @@ const BOMCost = () => {
                     <Box sx={{ flex: 1, minHeight: 0, overflowY: 'auto', p: 3 }}>
                         <CostSummaryCards
                             totalCost={totalCost}
-                            bomCount={selectedIds.length}
+                            bomCount={calculationIds.length}
                             limbCount={activeBoms.length}
                             topLimb={topLimb}
                         />
@@ -372,7 +378,7 @@ const BOMCost = () => {
                                     </Box>
                                 )}
 
-                                {!calculating && !detailedResults && selectedIds.length === 0 && (
+                                {!calculating && !detailedResults && calculationIds.length === 0 && (
                                     <Box sx={{ textAlign: 'center', py: 6, border: '1px dashed', borderColor: 'divider', borderRadius: 2 }}>
                                         <Typography color="text.secondary" variant="body1">
                                             {activeBoms.length > 0
@@ -386,7 +392,7 @@ const BOMCost = () => {
                                 {!calculating && detailedResults && (
                                     <ConsolidatedBomView
                                         detailedResults={detailedResults}
-                                        selectedItems={selectedIds.map(id => ({ type: 'dissolved', id }))}
+                                        selectedItems={calculationIds.map(id => ({ type: 'dissolved', id }))}
                                         badgeId={badgeId}
                                     />
                                 )}
